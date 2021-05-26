@@ -20,8 +20,9 @@ The data files used are the following :
   - ALMANAC_ALL_INTEREST.csv : subset of the complete NCI-ALMANAC dataset from https://wiki.nci.nih.gov/display/NCIDTPdata/NCI-ALMANAC. This file contains only the data concerning the 3 pairs of drugs of interest, as well as their mono-therapy points.
   - A549_paper.csv : file containing the responses of the triplet of drugs, from https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006774/
   - VALIDATION_DOSE.csv : input of the Dose model using only the NCI-ALMANAC dataset (without using the predictions of the Dose model). Use the script Input_Dose_validation.py to make this file.
-  - Set of files used in ComboFM (obtained using the R scripts : https://zenodo.org/record/4129688#.YK5SaC2FBBY (Preprocessing section)):
-    
+ 
+The set of files used in ComboFM is obtained using the R scripts : https://zenodo.org/record/4129688#.YK5SaC2FBBY (Preprocessing section). The R scripts must be run on the NCI-ALMANAC.csv file. It gives the following files (too heavy to put on GitHub) : 
+   
     -  cell_lines__gene_expression.csv
     -  cell_lines__one-hot_encoding.csv
     -  drug1__estate_fingerprints.csv
