@@ -10,7 +10,8 @@ In order to do so, 4 scripts must be used : ( **attention changer noms des scrip
   The Input_Dose_ComboFM takes 2 arguments : the name of the folder containing the result of ComboFM and the nmale of the file containing the predictions of ComboFM (which should be in the folder specified as the first argument).
   6) mainDose.m :  run the Dose model and saves the predictions in a *csv* file.
 
-The * means represents the fact that there are different possible scenarios, each one having one script to divide the dataset. **trouver un truc pour présenter les 11 scénarios**
+The * means represents the fact that there are different possible scenarios, each one having one script to divide the dataset.
+<img width="874" alt="SCENARIOS" src="https://user-images.githubusercontent.com/62287195/119674714-b6da3100-be3c-11eb-8014-c196a593aabe.png">
 
 The data files used are the following : 
 
