@@ -11,6 +11,8 @@ In order to do so, 4 scripts must be used :
   6) mainDose.m :  run the Dose model and saves the predictions in a *csv* file. All the .m files are scripts of the Dose model.
 
 The * means represents the fact that there are different possible scenarios, each one having one script to divide the dataset. See the image below for a explaination/representation of the different scenarios. The color representation is the following : grey = training set, orange = test set. The names correspond to the * in the CV-Dispatch-*.py scripts.
+
+
 <img width="622" alt="SCENARIOS" src="https://user-images.githubusercontent.com/62287195/119675819-a8d8e000-be3d-11eb-9ac8-6b76b63f47be.png">
 
 
