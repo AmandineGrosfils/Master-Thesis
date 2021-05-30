@@ -19,13 +19,13 @@ The * means represents the fact that there are different possible scenarios, eac
 
 The data files used are the following : 
 
-  - NCI-ALMANAC.csv : complete dataset used in ComboFM. This file is divided into a test and a training set. The training set is divided into different cross-validation folds. This file is a subset of the NCI-ALMANAC_full_data.csv file.
-  - NCI-ALMANAC_full_data.csv can be downloaded here : https://zenodo.org/record/4129688#.YK5SaC2FBBY.
-  - ALMANAC_ALL_INTEREST.csv : subset of the complete NCI-ALMANAC dataset from https://wiki.nci.nih.gov/display/NCIDTPdata/NCI-ALMANAC. This file contains only the data concerning the 3 pairs of drugs of interest, as well as their mono-therapy points.
+  - NCI-ALMANAC.csv : complete dataset used in ComboFM. This file is divided into a test and a training set. The training set is divided into different cross-validation folds. This file is a subset of the NCI-ALMANAC_full_data.csv file. The growth percentages are expressed **without time zero measurements**.
+  - NCI-ALMANAC_full_data.csv can be downloaded here : https://zenodo.org/record/4129688#.YK5SaC2FBBY. The growth percentages are expressed **without time zero measurements**.
+  - ALMANAC_ALL_INTEREST.csv : subset of the complete NCI-ALMANAC dataset from https://wiki.nci.nih.gov/display/NCIDTPdata/NCI-ALMANAC. This file contains only the data concerning the 3 pairs of drugs of interest, as well as their mono-therapy points. The growth percentages are expressed **with and without time zero measurements**.
   - A549_paper.csv : file containing the responses of the triplet of drugs, from https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006774/
-  - VALIDATION_DOSE.csv : input of the Dose model using only the NCI-ALMANAC dataset (without using the predictions of the Dose model). Use the script Input_Dose_validation.py to make this file.
+  - VALIDATION_DOSE.csv : input of the Dose model using only the NCI-ALMANAC dataset (without using the predictions of the Dose model). Use the script Input_Dose_validation.py to make this file. The growth percentages are expressed **without time zero measurements**.
  
-The set of files used in ComboFM is obtained using the R scripts : https://zenodo.org/record/4129688#.YK5SaC2FBBY (Preprocessing section). The R scripts must be run on the NCI-ALMANAC.csv file. It gives the following files (too heavy to put on GitHub) : 
+The set of files used in ComboFM is obtained using the R scripts : https://zenodo.org/record/4129688#.YK5SaC2FBBY (Preprocessing section). The R scripts must be run on the NCI-ALMANAC.csv file. It gives the following files : 
    
     -  cell_lines__gene_expression.csv
     -  cell_lines__one-hot_encoding.csv
