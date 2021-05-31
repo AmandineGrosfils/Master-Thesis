@@ -2,7 +2,7 @@
 
 This repository contains all the needed scripts and data files in order to use ComboFM and the Dose model together. The idea is to use ComboFM to predict the responses of *pairs* of drugs, that are then used as an input of the Dose model which then predicts responses of *higher order combinations* (triplet of drugs in this work). 
 
-In order to do so, different scripts must be used : 
+In order to do so, different scripts must be used (in the following order): 
   1) makeFile.py: it creates the NCI-ALMANAC.csv file. It is a subset of the NCI-ALMANAC_full_data.csv file. The NaN values are removed, as well as the dose-response matrices that are not of size 3x3.  
   2) CV-Dispatch-* .py: this script makes the different folders (see meaning of * below) for the cross-validation, as well as the test set that is kept apart from the cross-validation.
   3) ComboFM.py: it runs ComboFM and saves the predictions in a *txt* file. The script calls the utils.py script.
