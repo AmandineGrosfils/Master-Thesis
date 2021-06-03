@@ -13,7 +13,7 @@ In order to do so, different scripts must be used (in the following order):
   
   Note that the Dose model in this work uses the modified Hill function : <img src="https://render.githubusercontent.com/render/math?math=y(x) = \frac{max(Data)}{1%2B(\frac{x}{a})^b}"> 
  
- The Input_Dose_validation.py script creates the input of the Dose model when we do use ComboFM previously. 
+ The Input_Dose_validation.py script creates the input of the Dose model when we do use ComboFM previously. It creates a VALIDATION_DOSE.csv file.
   
 
 The * represents the fact that there are different possible scenarios of use of ComboFM, each one having one script to divide the dataset. See the image below for a explanation/representation of the different scenarios. The color representation is the following: grey = training set, orange = test set. The names correspond to the * in the CV-Dispatch-*.py scripts.
