@@ -9,7 +9,7 @@ In order to do so, different scripts must be used (in the following order):
   The ComboFM code takes 1 argument as input: the name of the folder containing the CV folds. 
   5) Input_Dose_ComboFM.py : from the predictions of ComboFM, it creates the input *csv* file for the Dose model.
   The Input_Dose_ComboFM takes 2 arguments: the name of the folder containing the result of ComboFM and the name of the file containing the predictions of ComboFM (which should be in the folder specified as the first argument).
-  6) mainDose.m :  it runs the Dose model and saves the predictions in a *csv* file. The scripts of the Dose model have obtained by conctacted the authors of the following paper :  https://www.pnas.org/content/113/37/10442.short 
+  6) mainDose.m :  it runs the Dose model and saves the predictions in a *csv* file. The scripts of the Dose model have obtained by conctacting the authors of the following paper :  https://www.pnas.org/content/113/37/10442.short 
   
   Note that the Dose model uses the modified Hill function : <img src="https://render.githubusercontent.com/render/math?math=y(x) = \frac{max(Data)}{1%2B(\frac{x}{a})^b}"> 
 
